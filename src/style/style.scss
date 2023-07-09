@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    height: 25vh;
+    display: flex;
+    background: rgb(43, 42, 76);
+    .logo img{
+        width: 200px;
+        height: 200px;
+        left: 3rem;
+        top: 2rem;
+        color: rgb(238, 226, 222);
+    }
+}

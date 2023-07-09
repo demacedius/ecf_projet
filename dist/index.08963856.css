@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  background: #2b2a4c;
+  height: 25vh;
+  display: flex;
+}
+
+nav .logo img {
+  color: #eee2de;
+  width: 200px;
+  height: 200px;
+  top: 2rem;
+  left: 3rem;
+}
+
+/*# sourceMappingURL=index.08963856.css.map */
