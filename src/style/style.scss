@@ -6,47 +6,75 @@
   text-decoration: none;
 }
 nav {
-  height: 25vh;
+  height: 25svh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 5rem;
+  justify-content: space-evenly;
   background: rgb(43, 42, 76);
   .logo img {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     position: relative;
   }
-  ul {
+  ul, li{
     display: flex;
-    li {
-      display: inline-block;
-      font-size: 2rem;
-      color: rgb(238, 226, 222);
-      font-weight: 800;
-      padding: 10rem;
-      transition: 0.2s ease-in-out;
-      cursor: pointer;
-      a {
-        text-decoration: none;
-        color: rgb(238, 226, 222);
-        &::after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          background-color: rgb(234, 144, 108);
-          transform-origin: bottom left;
-          transform: scaleX(1);
-          transition: transform 0.25s ease-out;
-        }
-        &:hover {
-          color: rgb(234, 144, 108);
-          &::after{
-            transform: scaleX(1);
-          }
-        }
-      }
+    gap: 15rem;
+    font-size: 2rem;
+    text-decoration: none;
+    
+  }
+}
+.link {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.2rem;
+  color: white;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(177, 23, 27);
+    transition: all 0.25s ease-out;
+  }
+  &:hover{
+    color: rgb(177, 23, 27);
+
+  }
+  &:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
+
+main{
+  section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 5rem;
+    background-color: rgb(238, 226 , 222);
+    gap: 3rem;
+    p{
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
     }
+    img{
+      padding-left: 10rem;
+    }
+  }
+}
+
+footer{
+  background-color: rgb(43, 42, 76) ;
+  padding: 3rem;
+  p{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+
   }
 }
